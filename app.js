@@ -1,3 +1,4 @@
+'use strict';
 var userName = prompt('What\'s your name?');
 alert ('Welcome to my site ' + userName + '!');
 
@@ -51,13 +52,11 @@ if(answerFive === 'yes' || answerFive === 'y') {
   alert ('MT is the only answer.');
 }
 
-var myAnswer = prompt('What pets do I like? Answer 1 for dog, 2 for cat, or 3 for fish!');
-var myArray = ['blah','dog', 'cat', 'fish'];
-var a = myArray.indexOf('dog');
-var b = myArray.indexOf('cat');
-var c = myArray.indexOf('fish');
-if(myAnswer === a || b || c) {
-  alert('Congrats! You guessed right! I like dogs, cats, and fish!');
+var myAnswer = prompt('What pets do I like?');
+var myArray = ['dog', 'cat', 'fish'];
+
+if(myArray.indexOf(myAnswer) === -1) {
+  alert('Try again! I know you can get it.');
 } else {
-  alert('Try again!');
+  alert('That\'s right, I like dogs and cats. Fish are OK.');
 }
