@@ -51,12 +51,13 @@ if(answerFive === 'yes' || answerFive === 'y') {
   alert ('MT is the only answer.');
 }
 
-var answerSix = prompt('Was I born in the 80\'s??');
-answerSix = answerSix.toLowerCase();
-if(answerSix === 'yes' || answerSix === 'y') {
-  alert ('Yes, I am glad I didn\'t miss the 90\'s..');
-} else if(answerSix !== 'yes' && answerFive !== 'y') {
-  alert ('Guess again.');
+var myAnswer = prompt('What pets do I like? Answer 1 for dog, 2 for cat, or 3 for fish!');
+var myArray = ['blah','dog', 'cat', 'fish'];
+var a = myArray.indexOf('dog');
+var b = myArray.indexOf('cat');
+var c = myArray.indexOf('fish');
+if(myAnswer === a || b || c) {
+  alert('Congrats! You guessed right! I like dogs, cats, and fish!');
 } else {
-  alert ('Meh.');
+  alert('Try again!');
 }
