@@ -60,3 +60,19 @@ if(myArray.indexOf(myAnswer) === -1) {
 } else {
   alert('That\'s right, I like dogs and cats. Fish are OK.');
 }
+
+var arrayOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8];
+var rosieChoice = arrayOfNumbers[3];
+for (var i = 0; i < rosieChoice; ++i) {
+  var answerSeven = prompt('I am thinking of a number between 1 and 8. What is it?');
+  answerSeven = answerSeven.toString();
+  var userInteger = parseInt(answerSeven);
+  if(userInteger === rosieChoice) {
+    alert('You are psychic!');
+  } else if (userInteger > rosieChoice) {
+    alert('Your guess is too high!');
+  } else if (userInteger < rosieChoice) {
+    alert('Your guess is too low!');
+  } else {
+  }
+}
