@@ -51,12 +51,12 @@ if(answerFive === 'yes' || answerFive === 'y') {
   alert ('MT is the only answer.');
 }
 
-var answerSix = prompt('Did I go to school in Montana?');
-answerSix = answerFive.toLowerCase();
+var answerSix = prompt('Was I born in the 80\'s??');
+answerSix = answerSix.toLowerCase();
 if(answerSix === 'yes' || answerSix === 'y') {
-  alert ('Yes, MT is down to earth.');
+  alert ('Yes, I am glad I didn\'t miss the 90\'s..');
 } else if(answerSix !== 'yes' && answerFive !== 'y') {
-  alert ('There is no other place I would rather be.');
+  alert ('Guess again.');
 } else {
-  alert ('MT is the only answer.');
+  alert ('Meh.');
 }
