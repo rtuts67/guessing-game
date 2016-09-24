@@ -1,4 +1,11 @@
-* { background-color: lightgray;
+* {
+  background-color: lightgray;
 }
-h2 { color: darkslategray;
+h2 {
+  color: darkslategray;
 }
+img.picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }

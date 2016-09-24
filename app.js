@@ -59,7 +59,7 @@ var funcFive = function() {
 
   if(answerFive === 'yes' || answerFive === 'y') {
     alert ('Yes, MT is down to earth.');
-  } else if (answerFour === 'no' || answerFive === 'n') {
+  } else if (answerFive === 'no' || answerFive === 'n') {
     alert ('There is no other place I would rather be.');
   } else {
     alert ('MT is the only answer.');
